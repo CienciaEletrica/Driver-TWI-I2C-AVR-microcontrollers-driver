@@ -1,0 +1,16 @@
+<map id="inc/twi_types.h" name="inc/twi_types.h">
+<area shape="rect" id="Node000001" title="Definições de tipos, enumerações e assinaturas de callback do driver TWI." alt="" coords="432,5,541,32"/>
+<area shape="rect" id="Node000002" href="$twi_8h.html" title="Interface pública do driver TWI/I2C para AVR." alt="" coords="388,80,459,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="468,43,436,82,433,77,463,45"/>
+<area shape="rect" id="Node000007" href="$twi__internal_8h.html" title="Definições internas e Máquina de Estados (FSM) do driver TWI." alt="" coords="489,80,608,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="508,42,541,80,535,79,506,46"/>
+<area shape="rect" id="Node000003" href="$example1_8c.html" title="Exemplo 1: Operação Master simples (Escrita e Leitura assíncrona)." alt="" coords="5,155,154,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="374,108,140,157,139,151,373,103"/>
+<area shape="rect" id="Node000004" href="$example2_8c.html" title="Exemplo 2: Operação Slave completa (Responde ao Master do Exemplo 1)." alt="" coords="177,155,326,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="382,113,283,157,281,151,377,113"/>
+<area shape="rect" id="Node000005" href="$example3_8c.html" title="Exemplo 3: Leitura do registrador WHO_AM_I do sensor MPU6050." alt="" coords="349,155,498,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="425,121,426,156,421,153,422,124"/>
+<area shape="rect" id="Node000006" href="$twi_8c.html" title="Implementação do Driver TWI/I2C para microcontroladores AVR." alt="" coords="521,155,592,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="460,112,536,154,531,154,459,117"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="554,120,558,156,553,153,550,124"/>
+</map>

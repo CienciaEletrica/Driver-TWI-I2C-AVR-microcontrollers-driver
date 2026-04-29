@@ -1,0 +1,332 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<title>TWI(I2C) AVR Driver: Referência do Arquivo examples/example2.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
+   <tbody>
+   <tr style="height: 80px;"> <!-- Define a altura da linha do cabeçalho -->
+    <!-- Lógica do Logo com tamanho forçado -->
+    <td id="projectlogo" style="width: 80px; padding: 10px;">
+      <img alt="Logo" src="FIGURA2.png" style="height: 60px !important; width: auto !important;"/>
+    </td>
+    <td id="projectalign" style="padding-left: 0.5em; vertical-align: middle;">
+     <div id="projectname" style="font-size: 1.6em; font-weight: bold;">Driver TWI/I2C - YouTube: Ci&ecirc;ncia El&eacute;trica</div>
+     <div id="projectbrief" style="font-size: 1em; opacity: 0.8;">Biblioteca Otimizada para Microcontroladores AVR</div>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('example2_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência do Arquivo example2.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Exemplo 2: Operação Slave completa (Responde ao Master do Exemplo 1).  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;avr/io.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;avr/interrupt.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="twi_8h_source.html">twi.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para example2.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example2_8c__incl.svg" width="463" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="example2_8c_source.html">Ir para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:aba398ef6d2b9f80899b2d65ca9a0fe7d" id="r_aba398ef6d2b9f80899b2d65ca9a0fe7d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aba398ef6d2b9f80899b2d65ca9a0fe7d">USART_Init</a> (void)</td></tr>
+<tr class="memdesc:aba398ef6d2b9f80899b2d65ca9a0fe7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa a UART para monitoramento.  <br /></td></tr>
+<tr class="memitem:a30c5ce81613c9030d0f20e4c556f384e" id="r_a30c5ce81613c9030d0f20e4c556f384e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a30c5ce81613c9030d0f20e4c556f384e">USART_Transmite_String</a> (const char *str)</td></tr>
+<tr class="memitem:a8c90411c4eede2e0397727033c45176f" id="r_a8c90411c4eede2e0397727033c45176f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8c90411c4eede2e0397727033c45176f">on_receive</a> (const uint8_t *dados, size_t len)</td></tr>
+<tr class="memdesc:a8c90411c4eede2e0397727033c45176f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback de recebimento (Master -&gt; Slave).  <br /></td></tr>
+<tr class="memitem:a17a0a7ba53e28f208477b94daf43a35e" id="r_a17a0a7ba53e28f208477b94daf43a35e"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a17a0a7ba53e28f208477b94daf43a35e">on_transmit</a> (uint8_t *buffer, size_t max_len)</td></tr>
+<tr class="memdesc:a17a0a7ba53e28f208477b94daf43a35e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback de transmissão (Slave -&gt; Master).  <br /></td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe" id="r_a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="memdesc:a840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ponto de entrada do Slave.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Exemplo 2: Operação Slave completa (Responde ao Master do Exemplo 1). </p>
+<p>Este exemplo demonstra como configurar o AVR para atuar como um dispositivo escravo no barramento I2C, tratando eventos de recepção e requisição de dados.</p>
+<p><b>Funcionamento:</b></p><ol type="1">
+<li>O Slave é inicializado com o endereço <code>0x10</code>.</li>
+<li>Quando o Master envia dados (<code>SLA+W</code>), a função <span class="tt"><a class="el" href="#a8c90411c4eede2e0397727033c45176f" title="Callback de recebimento (Master -&gt; Slave).">on_receive</a></span> é disparada.</li>
+<li>Quando o Master solicita dados (<code>SLA+R</code>), a função <span class="tt"><a class="el" href="#a17a0a7ba53e28f208477b94daf43a35e" title="Callback de transmissão (Slave -&gt; Master).">on_transmit</a></span> é disparada para preencher o buffer de saída.</li>
+</ol>
+<p>Toda a lógica é baseada em eventos (callbacks) disparados pela ISR. </p>
+
+<p class="definition">Definição no arquivo <a class="el" href="example2_8c_source.html">example2.c</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Funções</h2>
+<a id="a840291bc02cba5474a4cb46a9b9566fe" name="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ponto de entrada do Slave. </p>
+<p>Inicializa como Slave no endereço 0x10. O clock aqui define a taxa de amostragem interna, mas o clock do barramento é ditado pelo Master.</p>
+
+<p class="definition">Definição na linha <a class="el" href="example2_8c_source.html#l00048">48</a> do arquivo <a class="el" href="example2_8c_source.html">example2.c</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example2_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph.svg" width="604" height="284"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a8c90411c4eede2e0397727033c45176f" name="a8c90411c4eede2e0397727033c45176f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c90411c4eede2e0397727033c45176f">&#9670;&#160;</a></span>on_receive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void on_receive </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>dados</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>len</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback de recebimento (Master -&gt; Slave). </p>
+<p>Implementação do tratamento de dados recebidos.</p>
+<p>Chamado automaticamente quando o Master finaliza uma escrita para este Slave. </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dados</td><td>Ponteiro para o buffer interno contendo os bytes recebidos. </td></tr>
+    <tr><td class="paramname">len</td><td>Quantidade de bytes recebidos. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="example2_8c_source.html#l00097">97</a> do arquivo <a class="el" href="example2_8c_source.html">example2.c</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example2_8c_a8c90411c4eede2e0397727033c45176f_cgraph.svg" width="316" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example2_8c_a8c90411c4eede2e0397727033c45176f_icgraph.svg" width="367" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a17a0a7ba53e28f208477b94daf43a35e" name="a17a0a7ba53e28f208477b94daf43a35e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a0a7ba53e28f208477b94daf43a35e">&#9670;&#160;</a></span>on_transmit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t on_transmit </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>max_len</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback de transmissão (Slave -&gt; Master). </p>
+<p>Implementação da resposta ao Master.</p>
+<p>Chamado quando o Master solicita dados deste Slave. A aplicação deve preencher o <code class="param">buffer</code> com as informações desejadas. </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Ponteiro para o buffer de transmissão do hardware. </td></tr>
+    <tr><td class="paramname">max_len</td><td>Espaço máximo disponível no buffer (definido em <a class="el" href="twi__config_8h.html#ae0c5c92d008fc2a0ee0e6ca8a9fb6f0e" title="TWI_RX_BUFFER_SIZE">TWI_RX_BUFFER_SIZE</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>size_t Quantidade de bytes efetivamente carregados no buffer. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="example2_8c_source.html#l00115">115</a> do arquivo <a class="el" href="example2_8c_source.html">example2.c</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example2_8c_a17a0a7ba53e28f208477b94daf43a35e_cgraph.svg" width="320" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example2_8c_a17a0a7ba53e28f208477b94daf43a35e_icgraph.svg" width="372" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aba398ef6d2b9f80899b2d65ca9a0fe7d" name="aba398ef6d2b9f80899b2d65ca9a0fe7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba398ef6d2b9f80899b2d65ca9a0fe7d">&#9670;&#160;</a></span>USART_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USART_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa a UART para monitoramento. </p>
+
+<p class="definition">Definição na linha <a class="el" href="example2_8c_source.html#l00077">77</a> do arquivo <a class="el" href="example2_8c_source.html">example2.c</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example2_8c_aba398ef6d2b9f80899b2d65ca9a0fe7d_icgraph.svg" width="200" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a30c5ce81613c9030d0f20e4c556f384e" name="a30c5ce81613c9030d0f20e4c556f384e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30c5ce81613c9030d0f20e4c556f384e">&#9670;&#160;</a></span>USART_Transmite_String()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USART_Transmite_String </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>str</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="example2_8c_source.html#l00086">86</a> do arquivo <a class="el" href="example2_8c_source.html">example2.c</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="example2_8c_a30c5ce81613c9030d0f20e4c556f384e_icgraph.svg" width="592" height="180"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.16.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a href="example2_8c.html">example2.c</a></li>
+    <li class="footer">
+      Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 | 
+      Desenvolvido por <b>Tiago Henrique dos Santos - Ci&ecirc;ncia El&eacute;trica</b>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

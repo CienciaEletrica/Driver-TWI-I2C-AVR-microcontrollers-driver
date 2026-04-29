@@ -1,0 +1,5 @@
+<map id="twi_init" name="twi_init">
+<area shape="rect" id="Node000001" title="Inicializa o módulo TWI." alt="" coords="5,5,68,32"/>
+<area shape="rect" id="Node000002" href="$twi_8c.html#a43dcf18cf7b6f9c5ee25a4a88e2d7efd" title="Calcula o valor do registrador TWBR baseado na frequência de CPU e SCL desejada." alt="" coords="116,5,217,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,16,103,18,97,19,68,21"/>
+</map>

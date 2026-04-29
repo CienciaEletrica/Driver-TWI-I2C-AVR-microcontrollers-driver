@@ -1,0 +1,5 @@
+<map id="inc/twi_internal.h" name="inc/twi_internal.h">
+<area shape="rect" id="Node000001" title="Definições internas e Máquina de Estados (FSM) do driver TWI." alt="" coords="5,5,125,32"/>
+<area shape="rect" id="Node000002" href="$twi_8c.html" title="Implementação do Driver TWI/I2C para microcontroladores AVR." alt="" coords="29,80,101,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,46,68,80,62,79,63,50"/>
+</map>

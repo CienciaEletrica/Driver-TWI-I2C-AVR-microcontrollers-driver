@@ -1,0 +1,716 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<title>TWI(I2C) AVR Driver: Referência do Arquivo inc/twi.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
+   <tbody>
+   <tr style="height: 80px;"> <!-- Define a altura da linha do cabeçalho -->
+    <!-- Lógica do Logo com tamanho forçado -->
+    <td id="projectlogo" style="width: 80px; padding: 10px;">
+      <img alt="Logo" src="FIGURA2.png" style="height: 60px !important; width: auto !important;"/>
+    </td>
+    <td id="projectalign" style="padding-left: 0.5em; vertical-align: middle;">
+     <div id="projectname" style="font-size: 1.6em; font-weight: bold;">Driver TWI/I2C - YouTube: Ci&ecirc;ncia El&eacute;trica</div>
+     <div id="projectbrief" style="font-size: 1em; opacity: 0.8;">Biblioteca Otimizada para Microcontroladores AVR</div>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('twi_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência do Arquivo twi.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Interface pública do driver TWI/I2C para AVR.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="twi__types_8h_source.html">twi_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="twi__config_8h_source.html">twi_config.h</a>&quot;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para twi.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="twi_8h__incl.svg" width="264" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Este grafo mostra quais arquivos estão direta ou indiretamente relacionados com esse arquivo:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="twi_8h__dep__incl.svg" width="598" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="twi_8h_source.html">Ir para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a43bafb28b29491ec7f871319b5a3b2f8" id="r_a43bafb28b29491ec7f871319b5a3b2f8"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</a>&#160;&#160;&#160;16000000UL</td></tr>
+<tr class="memdesc:a43bafb28b29491ec7f871319b5a3b2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a frequência da CPU caso não tenha sido definida via compilador.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:af4ccfdbb8307f777e7624599b63a57a3" id="r_af4ccfdbb8307f777e7624599b63a57a3"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#af4ccfdbb8307f777e7624599b63a57a3">TWI_BusState_t</a> { <a class="el" href="#af4ccfdbb8307f777e7624599b63a57a3a9db0f4a6c1d01ffe86a24f60db11d563">TWI_BUS_IDLE</a>
+, <a class="el" href="#af4ccfdbb8307f777e7624599b63a57a3a4f8d80626f16561e2f40175c775cdfca">TWI_BUS_BUSY</a>
+, <a class="el" href="#af4ccfdbb8307f777e7624599b63a57a3a30266b1d9bca939bfddc92ec2047e568">TWI_BUS_ERROR</a>
+ }</td></tr>
+<tr class="memdesc:af4ccfdbb8307f777e7624599b63a57a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estados lógicos do barramento TWI.  <a href="#af4ccfdbb8307f777e7624599b63a57a3">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a839dfadc1a40b5a4016c5794bba521e3" id="r_a839dfadc1a40b5a4016c5794bba521e3"><td class="memItemLeft"><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a839dfadc1a40b5a4016c5794bba521e3">twi_init</a> (<a class="el" href="twi__types_8h.html#a3731c618227b2d4a657e582d2a743933">TWI_Mode_t</a> mode, uint8_t address, <a class="el" href="twi__types_8h.html#adab52de4b26c56f1d884f0a78491beed">TWI_Clock_t</a> clock)</td></tr>
+<tr class="memdesc:a839dfadc1a40b5a4016c5794bba521e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa o módulo TWI.  <br /></td></tr>
+<tr class="memitem:aacbe2f164050a536376fad9f081021e4" id="r_aacbe2f164050a536376fad9f081021e4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aacbe2f164050a536376fad9f081021e4">twi_deinit</a> (void)</td></tr>
+<tr class="memdesc:aacbe2f164050a536376fad9f081021e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desinicializa o módulo TWI, desligando o hardware e interrupções.  <br /></td></tr>
+<tr class="memitem:ace0b103ca42c617be55ddc1507dcc4ca" id="r_ace0b103ca42c617be55ddc1507dcc4ca"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#ace0b103ca42c617be55ddc1507dcc4ca">twi_bus_is_free</a> (void)</td></tr>
+<tr class="memdesc:ace0b103ca42c617be55ddc1507dcc4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se o barramento TWI está disponível para uma nova transação.  <br /></td></tr>
+<tr class="memitem:ac30e0e60dc0456b3995368912e96e8f2" id="r_ac30e0e60dc0456b3995368912e96e8f2"><td class="memItemLeft"><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac30e0e60dc0456b3995368912e96e8f2">twi_master_start_write</a> (uint8_t slave_address, const uint8_t *data, size_t length)</td></tr>
+<tr class="memdesc:ac30e0e60dc0456b3995368912e96e8f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia envio assíncrono de dados como Master.  <br /></td></tr>
+<tr class="memitem:a38c82f66267f7ed48a1342358563429d" id="r_a38c82f66267f7ed48a1342358563429d"><td class="memItemLeft"><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a38c82f66267f7ed48a1342358563429d">twi_master_start_read</a> (uint8_t slave_address, uint8_t *data, size_t length)</td></tr>
+<tr class="memdesc:a38c82f66267f7ed48a1342358563429d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia leitura assíncrona de dados como Master.  <br /></td></tr>
+<tr class="memitem:a8a73bbaf7928c2df253a0c490c80333e" id="r_a8a73bbaf7928c2df253a0c490c80333e"><td class="memItemLeft"><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8a73bbaf7928c2df253a0c490c80333e">twi_master_start_write_read</a> (uint8_t slave_address, const uint8_t *write_data, size_t write_length, uint8_t *read_data, size_t read_length)</td></tr>
+<tr class="memdesc:a8a73bbaf7928c2df253a0c490c80333e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia uma transação combinada (Escrita seguida de Leitura) com Repeated Start.  <br /></td></tr>
+<tr class="memitem:a21f0cd2bbdf528b20ad08d8e1284693e" id="r_a21f0cd2bbdf528b20ad08d8e1284693e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a21f0cd2bbdf528b20ad08d8e1284693e">twi_master_register_callbacks</a> (<a class="el" href="twi__types_8h.html#a58a34777f75c8f6afb877011c34499bd">TWI_Master_Complete_Callback_t</a> <a class="el" href="example1_8c.html#ad9b05939593a1d19d76cdd8ea94edb17">on_complete</a>, <a class="el" href="twi__types_8h.html#ad914547b4e138d105a95689579306839">TWI_Error_Callback_t</a> on_error)</td></tr>
+<tr class="memdesc:a21f0cd2bbdf528b20ad08d8e1284693e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registra os callbacks de eventos para o modo Master.  <br /></td></tr>
+<tr class="memitem:a34c56c0dd6b7b72b6d7eb3b2b1ec4b00" id="r_a34c56c0dd6b7b72b6d7eb3b2b1ec4b00"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a34c56c0dd6b7b72b6d7eb3b2b1ec4b00">twi_slave_register_callbacks</a> (<a class="el" href="twi__types_8h.html#a5e73b0d863a46d89bc055fa23f0e2597">TWI_Slave_Receive_Callback_t</a> <a class="el" href="example2_8c.html#a8c90411c4eede2e0397727033c45176f">on_receive</a>, <a class="el" href="twi__types_8h.html#a0235904eb077a98377e0bcfe737dc378">TWI_Slave_Transmit_Callback_t</a> <a class="el" href="example2_8c.html#a17a0a7ba53e28f208477b94daf43a35e">on_transmit</a>)</td></tr>
+<tr class="memdesc:a34c56c0dd6b7b72b6d7eb3b2b1ec4b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registra os callbacks de eventos para o modo Slave.  <br /></td></tr>
+<tr class="memitem:a5577c9fee94b16aa1c3321cc80f8f7b7" id="r_a5577c9fee94b16aa1c3321cc80f8f7b7"><td class="memItemLeft"><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5577c9fee94b16aa1c3321cc80f8f7b7">twi_slave_process</a> (void)</td></tr>
+<tr class="memdesc:a5577c9fee94b16aa1c3321cc80f8f7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processa eventos pendentes no Slave.  <br /></td></tr>
+<tr class="memitem:a518f081c2f69a656e38fe00c3dc42737" id="r_a518f081c2f69a656e38fe00c3dc42737"><td class="memItemLeft"><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a518f081c2f69a656e38fe00c3dc42737">twi_master_start_probe</a> (uint8_t slave_address)</td></tr>
+<tr class="memdesc:a518f081c2f69a656e38fe00c3dc42737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza um "ping" no endereço para verificar se o Slave está presente.  <br /></td></tr>
+<tr class="memitem:a8d1a6cf90ae95ca10032449a473791ae" id="r_a8d1a6cf90ae95ca10032449a473791ae"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a8d1a6cf90ae95ca10032449a473791ae">twi_had_timeout</a> (void)</td></tr>
+<tr class="memdesc:a8d1a6cf90ae95ca10032449a473791ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a última transação foi abortada por tempo limite excedido.  <br /></td></tr>
+<tr class="memitem:ad57dcd39bbd01aeb8446844c3a58c9fa" id="r_ad57dcd39bbd01aeb8446844c3a58c9fa"><td class="memItemLeft"><a class="el" href="#af4ccfdbb8307f777e7624599b63a57a3">TWI_BusState_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad57dcd39bbd01aeb8446844c3a58c9fa">twi_get_bus_status</a> (void)</td></tr>
+<tr class="memdesc:ad57dcd39bbd01aeb8446844c3a58c9fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o estado atual do barramento.  <br /></td></tr>
+<tr class="memitem:ad24454487e8f05eee2b6f6765c0f98f7" id="r_ad24454487e8f05eee2b6f6765c0f98f7"><td class="memItemLeft"><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad24454487e8f05eee2b6f6765c0f98f7">twi_master_write_read</a> (uint8_t slave_addr, const uint8_t *tx_data, size_t tx_len, uint8_t *rx_data, size_t rx_len)</td></tr>
+<tr class="memdesc:ad24454487e8f05eee2b6f6765c0f98f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Versão síncrona/bloqueante de escrita seguida de leitura.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Interface pública do driver TWI/I2C para AVR. </p>
+<p>Proporciona funções para operação Master e Slave, suportando modos de leitura, escrita e transações combinadas de forma assíncrona. </p>
+
+<p class="definition">Definição no arquivo <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Definições e macros</h2>
+<a id="a43bafb28b29491ec7f871319b5a3b2f8" name="a43bafb28b29491ec7f871319b5a3b2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43bafb28b29491ec7f871319b5a3b2f8">&#9670;&#160;</a></span>F_CPU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F_CPU&#160;&#160;&#160;16000000UL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define a frequência da CPU caso não tenha sido definida via compilador. </p>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8h_source.html#l00013">13</a> do arquivo <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumerações</h2>
+<a id="af4ccfdbb8307f777e7624599b63a57a3" name="af4ccfdbb8307f777e7624599b63a57a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ccfdbb8307f777e7624599b63a57a3">&#9670;&#160;</a></span>TWI_BusState_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#af4ccfdbb8307f777e7624599b63a57a3">TWI_BusState_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estados lógicos do barramento TWI. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="af4ccfdbb8307f777e7624599b63a57a3a9db0f4a6c1d01ffe86a24f60db11d563" name="af4ccfdbb8307f777e7624599b63a57a3a9db0f4a6c1d01ffe86a24f60db11d563"></a>TWI_BUS_IDLE&#160;</td><td class="fielddoc"><p>Barramento livre. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af4ccfdbb8307f777e7624599b63a57a3a4f8d80626f16561e2f40175c775cdfca" name="af4ccfdbb8307f777e7624599b63a57a3a4f8d80626f16561e2f40175c775cdfca"></a>TWI_BUS_BUSY&#160;</td><td class="fielddoc"><p>Transação ativa em andamento. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af4ccfdbb8307f777e7624599b63a57a3a30266b1d9bca939bfddc92ec2047e568" name="af4ccfdbb8307f777e7624599b63a57a3a30266b1d9bca939bfddc92ec2047e568"></a>TWI_BUS_ERROR&#160;</td><td class="fielddoc"><p>Estado de erro detectado. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8h_source.html#l00111">111</a> do arquivo <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Funções</h2>
+<a id="ace0b103ca42c617be55ddc1507dcc4ca" name="ace0b103ca42c617be55ddc1507dcc4ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace0b103ca42c617be55ddc1507dcc4ca">&#9670;&#160;</a></span>twi_bus_is_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t twi_bus_is_free </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se o barramento TWI está disponível para uma nova transação. </p>
+<dl class="section return"><dt>Retorna</dt><dd>1 se livre, 0 se ocupado. </dd></dl>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="twi_8h_ace0b103ca42c617be55ddc1507dcc4ca_cgraph.svg" width="487" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aacbe2f164050a536376fad9f081021e4" name="aacbe2f164050a536376fad9f081021e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacbe2f164050a536376fad9f081021e4">&#9670;&#160;</a></span>twi_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void twi_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Desinicializa o módulo TWI, desligando o hardware e interrupções. </p>
+<p>Desinicializa o módulo TWI, desligando o hardware e interrupções. </p>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8c_source.html#l00090">90</a> do arquivo <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+
+</div>
+</div>
+<a id="ad57dcd39bbd01aeb8446844c3a58c9fa" name="ad57dcd39bbd01aeb8446844c3a58c9fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad57dcd39bbd01aeb8446844c3a58c9fa">&#9670;&#160;</a></span>twi_get_bus_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#af4ccfdbb8307f777e7624599b63a57a3">TWI_BusState_t</a> twi_get_bus_status </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o estado atual do barramento. </p>
+<dl class="section return"><dt>Retorna</dt><dd><a class="el" href="#af4ccfdbb8307f777e7624599b63a57a3" title="Estados lógicos do barramento TWI.">TWI_BusState_t</a> Estado atual. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8c_source.html#l00390">390</a> do arquivo <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+
+</div>
+</div>
+<a id="a8d1a6cf90ae95ca10032449a473791ae" name="a8d1a6cf90ae95ca10032449a473791ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d1a6cf90ae95ca10032449a473791ae">&#9670;&#160;</a></span>twi_had_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t twi_had_timeout </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a última transação foi abortada por tempo limite excedido. </p>
+<dl class="section return"><dt>Retorna</dt><dd>1 se ocorreu timeout, 0 caso contrário. </dd></dl>
+
+</div>
+</div>
+<a id="a839dfadc1a40b5a4016c5794bba521e3" name="a839dfadc1a40b5a4016c5794bba521e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a839dfadc1a40b5a4016c5794bba521e3">&#9670;&#160;</a></span>twi_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a> twi_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="twi__types_8h.html#a3731c618227b2d4a657e582d2a743933">TWI_Mode_t</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="twi__types_8h.html#adab52de4b26c56f1d884f0a78491beed">TWI_Clock_t</a></td>          <td class="paramname"><span class="paramname"><em>clock</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa o módulo TWI. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Modo de operação (<a class="el" href="twi__types_8h.html#a3731c618227b2d4a657e582d2a743933a31023a548c0cb121a7d41b33287ce2cf" title="TWI_MODE_MASTER">TWI_MODE_MASTER</a> ou <a class="el" href="twi__types_8h.html#a3731c618227b2d4a657e582d2a743933a3bcd8d50208bb32cc05ca1d7f02368c6" title="TWI_MODE_SLAVE">TWI_MODE_SLAVE</a>). </td></tr>
+    <tr><td class="paramname">address</td><td>Endereço Slave (0-127). Ignorado no modo Master. </td></tr>
+    <tr><td class="paramname">clock</td><td>Frequência do barramento (<a class="el" href="twi__types_8h.html#adab52de4b26c56f1d884f0a78491beed" title="TWI_Clock_t">TWI_Clock_t</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8" title="Códigos de status e erro para operações TWI.">TWI_Status_t</a> Status da operação. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8c_source.html#l00065">65</a> do arquivo <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="twi_8h_a839dfadc1a40b5a4016c5794bba521e3_cgraph.svg" width="223" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="twi_8h_a839dfadc1a40b5a4016c5794bba521e3_icgraph.svg" width="171" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a21f0cd2bbdf528b20ad08d8e1284693e" name="a21f0cd2bbdf528b20ad08d8e1284693e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f0cd2bbdf528b20ad08d8e1284693e">&#9670;&#160;</a></span>twi_master_register_callbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void twi_master_register_callbacks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="twi__types_8h.html#a58a34777f75c8f6afb877011c34499bd">TWI_Master_Complete_Callback_t</a></td>          <td class="paramname"><span class="paramname"><em>on_complete</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="twi__types_8h.html#ad914547b4e138d105a95689579306839">TWI_Error_Callback_t</a></td>          <td class="paramname"><span class="paramname"><em>on_error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registra os callbacks de eventos para o modo Master. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="example1_8c.html#ad9b05939593a1d19d76cdd8ea94edb17" title="Callback de conclusão para transações Master.">on_complete</a></td><td>Função chamada após sucesso. </td></tr>
+    <tr><td class="paramname">on_error</td><td>Função chamada em caso de falha ou NACK. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8c_source.html#l00097">97</a> do arquivo <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="twi_8h_a21f0cd2bbdf528b20ad08d8e1284693e_cgraph.svg" width="510" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="twi_8h_a21f0cd2bbdf528b20ad08d8e1284693e_icgraph.svg" width="244" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a518f081c2f69a656e38fe00c3dc42737" name="a518f081c2f69a656e38fe00c3dc42737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a518f081c2f69a656e38fe00c3dc42737">&#9670;&#160;</a></span>twi_master_start_probe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a> twi_master_start_probe </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>slave_address</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Realiza um "ping" no endereço para verificar se o Slave está presente. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slave_address</td><td>Endereço a ser testado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8" title="Códigos de status e erro para operações TWI.">TWI_Status_t</a> TWI_OK se o comando de START foi enviado. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8c_source.html#l00109">109</a> do arquivo <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+
+</div>
+</div>
+<a id="a38c82f66267f7ed48a1342358563429d" name="a38c82f66267f7ed48a1342358563429d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38c82f66267f7ed48a1342358563429d">&#9670;&#160;</a></span>twi_master_start_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a> twi_master_start_read </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>slave_address</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>length</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicia leitura assíncrona de dados como Master. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slave_address</td><td>Endereço do dispositivo Slave. </td></tr>
+    <tr><td class="paramname">data</td><td>Buffer onde os dados lidos serão armazenados. </td></tr>
+    <tr><td class="paramname">length</td><td>Número de bytes a serem lidos. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8" title="Códigos de status e erro para operações TWI.">TWI_Status_t</a> TWI_OK se a leitura foi disparada. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8c_source.html#l00348">348</a> do arquivo <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="twi_8h_a38c82f66267f7ed48a1342358563429d_icgraph.svg" width="259" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac30e0e60dc0456b3995368912e96e8f2" name="ac30e0e60dc0456b3995368912e96e8f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac30e0e60dc0456b3995368912e96e8f2">&#9670;&#160;</a></span>twi_master_start_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a> twi_master_start_write </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>slave_address</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>length</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicia envio assíncrono de dados como Master. </p>
+<dl class="section note"><dt>Observação</dt><dd>Operação não-bloqueante. O callback de conclusão será chamado na ISR. </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slave_address</td><td>Endereço de 7 bits do dispositivo destino. </td></tr>
+    <tr><td class="paramname">data</td><td>Ponteiro para o buffer de dados a serem enviados. </td></tr>
+    <tr><td class="paramname">length</td><td>Quantidade de bytes no buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>TWI_OK se iniciado com sucesso, TWI_ERROR_BUS_BUSY se o barramento estiver ocupado. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8c_source.html#l00332">332</a> do arquivo <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="twi_8h_ac30e0e60dc0456b3995368912e96e8f2_icgraph.svg" width="262" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a8a73bbaf7928c2df253a0c490c80333e" name="a8a73bbaf7928c2df253a0c490c80333e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a73bbaf7928c2df253a0c490c80333e">&#9670;&#160;</a></span>twi_master_start_write_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a> twi_master_start_write_read </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>slave_address</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>write_data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>write_length</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>read_data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>read_length</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicia uma transação combinada (Escrita seguida de Leitura) com Repeated Start. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slave_address</td><td>Endereço do Slave. </td></tr>
+    <tr><td class="paramname">write_data</td><td>Buffer com dados de escrita (ex: endereço de registrador). </td></tr>
+    <tr><td class="paramname">write_length</td><td>Tamanho da escrita. </td></tr>
+    <tr><td class="paramname">read_data</td><td>Buffer para armazenar o retorno do Slave. </td></tr>
+    <tr><td class="paramname">read_length</td><td>Tamanho da leitura esperada. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8" title="Códigos de status e erro para operações TWI.">TWI_Status_t</a> Status de início da transação. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8c_source.html#l00361">361</a> do arquivo <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="twi_8h_a8a73bbaf7928c2df253a0c490c80333e_icgraph.svg" width="294" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ad24454487e8f05eee2b6f6765c0f98f7" name="ad24454487e8f05eee2b6f6765c0f98f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad24454487e8f05eee2b6f6765c0f98f7">&#9670;&#160;</a></span>twi_master_write_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a> twi_master_write_read </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>slave_addr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>tx_data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>tx_len</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>rx_data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>rx_len</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Versão síncrona/bloqueante de escrita seguida de leitura. </p>
+<dl class="section warning"><dt>Aviso</dt><dd>Pode bloquear a execução se não houver timeout adequado.</dd></dl>
+<p>Versão síncrona/bloqueante de escrita seguida de leitura.</p>
+<p>Esta função configura o hardware para enviar uma sequência de bytes e, imediatamente após (sem liberar o barramento), inicia a leitura de uma quantidade específica de bytes. É o método padrãoo para leitura de registradores em dispositivos como o DS3231.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slave_addr</td><td>Endereço de 7 bits do dispositivo escravo (ex: 0x68). </td></tr>
+    <tr><td class="paramname">tx_data</td><td>Ponteiro para o buffer de dados a serem enviados (ex: endereço do registrador). </td></tr>
+    <tr><td class="paramname">tx_len</td><td>Quantidade de bytes a transmitir. </td></tr>
+    <tr><td class="paramname">rx_data</td><td>Ponteiro para o buffer onde os dados recebidos serão armazenados. </td></tr>
+    <tr><td class="paramname">rx_len</td><td>Quantidade de bytes a receber.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>TWI_OK se a transação foi iniciada com sucesso. </dd>
+<dd>
+TWI_ERROR_BUS_BUSY se o módulo TWI já estiver processando outra transação. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8c_source.html#l00418">418</a> do arquivo <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+
+</div>
+</div>
+<a id="a5577c9fee94b16aa1c3321cc80f8f7b7" name="a5577c9fee94b16aa1c3321cc80f8f7b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5577c9fee94b16aa1c3321cc80f8f7b7">&#9670;&#160;</a></span>twi_slave_process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a> twi_slave_process </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processa eventos pendentes no Slave. </p>
+<dl class="section note"><dt>Observação</dt><dd>Deve ser chamada periodicamente no loop principal se não houver processamento direto na ISR. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd><a class="el" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8" title="Códigos de status e erro para operações TWI.">TWI_Status_t</a> Status do processamento. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8c_source.html#l00385">385</a> do arquivo <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+
+</div>
+</div>
+<a id="a34c56c0dd6b7b72b6d7eb3b2b1ec4b00" name="a34c56c0dd6b7b72b6d7eb3b2b1ec4b00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c56c0dd6b7b72b6d7eb3b2b1ec4b00">&#9670;&#160;</a></span>twi_slave_register_callbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void twi_slave_register_callbacks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="twi__types_8h.html#a5e73b0d863a46d89bc055fa23f0e2597">TWI_Slave_Receive_Callback_t</a></td>          <td class="paramname"><span class="paramname"><em>on_receive</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="twi__types_8h.html#a0235904eb077a98377e0bcfe737dc378">TWI_Slave_Transmit_Callback_t</a></td>          <td class="paramname"><span class="paramname"><em>on_transmit</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registra os callbacks de eventos para o modo Slave. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="example2_8c.html#a8c90411c4eede2e0397727033c45176f" title="Callback de recebimento (Master -&gt; Slave).">on_receive</a></td><td>Chamado quando o Master envia dados para este endereço. </td></tr>
+    <tr><td class="paramname"><a class="el" href="example2_8c.html#a17a0a7ba53e28f208477b94daf43a35e" title="Callback de transmissão (Slave -&gt; Master).">on_transmit</a></td><td>Chamado quando o Master solicita dados deste endereço. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8c_source.html#l00103">103</a> do arquivo <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="twi_8h_a34c56c0dd6b7b72b6d7eb3b2b1ec4b00_cgraph.svg" width="495" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="twi_8h_a34c56c0dd6b7b72b6d7eb3b2b1ec4b00_icgraph.svg" width="235" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.16.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a href="twi_8h.html">twi.h</a></li>
+    <li class="footer">
+      Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 | 
+      Desenvolvido por <b>Tiago Henrique dos Santos - Ci&ecirc;ncia El&eacute;trica</b>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

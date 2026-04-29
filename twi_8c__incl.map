@@ -1,0 +1,28 @@
+<map id="src/twi.c" name="src/twi.c">
+<area shape="rect" id="Node000001" title="Implementação do Driver TWI/I2C para microcontroladores AVR." alt="" coords="359,5,430,32"/>
+<area shape="rect" id="Node000002" href="$twi_8h.html" title="Interface pública do driver TWI/I2C para AVR." alt="" coords="370,80,420,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="396,30,397,66,392,63,393,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="361,229,429,256"/>
+<area shape="poly" id="edge13_Node000001_Node000005" title=" " alt="" coords="422,30,468,56,514,92,532,113,544,135,546,159,537,183,518,203,495,219,445,237,444,232,493,214,515,199,533,180,541,158,539,137,528,116,510,96,465,61,421,35"/>
+<area shape="rect" id="Node000006" href="$twi__config_8h.html" title="Configurações estáticas do driver TWI." alt="" coords="432,155,523,181"/>
+<area shape="poly" id="edge12_Node000001_Node000006" title=" " alt="" coords="404,30,434,79,467,141,462,140,430,81,402,35"/>
+<area shape="rect" id="Node000007" href="$twi__internal_8h.html" title="Definições internas e Máquina de Estados (FSM) do driver TWI." alt="" coords="146,80,244,107"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="358,34,245,77,243,72,362,31"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="5,155,70,181"/>
+<area shape="poly" id="edge14_Node000001_Node000008" title=" " alt="" coords="356,24,255,41,193,58,135,82,92,112,59,145,55,142,89,108,132,78,192,53,254,36,361,21"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="144,155,246,181"/>
+<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="380,32,225,148,222,143,375,33"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="597,80,667,107"/>
+<area shape="poly" id="edge16_Node000001_Node000010" title=" " alt="" coords="431,28,585,76,579,77,431,34"/>
+<area shape="rect" id="Node000003" href="$twi__types_8h.html" title="Definições de tipos, enumerações e assinaturas de callback do driver TWI." alt="" coords="269,155,358,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="383,106,340,147,337,142,378,108"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="397,105,397,215,392,213,393,109"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="410,105,455,145,449,144,408,110"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="173,229,238,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="297,181,238,223,236,218,292,183"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="329,179,372,219,367,219,327,184"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="216,105,283,146,277,147,215,110"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="173,109,158,123,142,141,132,160,135,180,150,202,171,221,166,220,146,205,130,182,127,159,137,138,154,120,177,105"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="166,110,80,150,78,145,169,105"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="196,105,197,140,192,138,193,109"/>
+</map>

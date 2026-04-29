@@ -1,0 +1,5 @@
+<map id="uart_puthex8" name="uart_puthex8">
+<area shape="rect" id="Node000001" title="Converte um byte em Hexadecimal e envia via UART." alt="" coords="5,5,102,32"/>
+<area shape="rect" id="Node000002" href="$example3_8c.html#a30c5ce81613c9030d0f20e4c556f384e" title=" " alt="" coords="150,5,322,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,16,137,18,131,19,102,21"/>
+</map>

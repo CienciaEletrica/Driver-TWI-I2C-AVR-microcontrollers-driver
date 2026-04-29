@@ -1,0 +1,10 @@
+<map id="USART_Transmite_String" name="USART_Transmite_String">
+<area shape="rect" id="Node000001" title=" " alt="" coords="293,56,465,83"/>
+<area shape="rect" id="Node000002" href="$example3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Função principal para o teste do MPU6050." alt="" coords="172,5,222,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,52,222,28,222,23,316,50"/>
+<area shape="rect" id="Node000003" href="$example3_8c.html#ad9b05939593a1d19d76cdd8ea94edb17" title="Callback chamado ao fim da transação combinada." alt="" coords="5,81,101,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,80,101,94,101,88,278,75"/>
+<area shape="rect" id="Node000004" href="$example3_8c.html#ac0f988e6b39a10eb1b4f67dd657373bb" title="Converte um byte em Hexadecimal e envia via UART." alt="" coords="149,107,245,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="316,87,246,109,245,104,311,88"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="130,109,101,106,101,100,136,108"/>
+</map>

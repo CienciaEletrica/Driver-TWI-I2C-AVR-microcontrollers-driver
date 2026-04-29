@@ -1,0 +1,281 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<title>TWI(I2C) AVR Driver: Referência do Arquivo inc/twi_internal.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
+   <tbody>
+   <tr style="height: 80px;"> <!-- Define a altura da linha do cabeçalho -->
+    <!-- Lógica do Logo com tamanho forçado -->
+    <td id="projectlogo" style="width: 80px; padding: 10px;">
+      <img alt="Logo" src="FIGURA2.png" style="height: 60px !important; width: auto !important;"/>
+    </td>
+    <td id="projectalign" style="padding-left: 0.5em; vertical-align: middle;">
+     <div id="projectname" style="font-size: 1.6em; font-weight: bold;">Driver TWI/I2C - YouTube: Ci&ecirc;ncia El&eacute;trica</div>
+     <div id="projectbrief" style="font-size: 1em; opacity: 0.8;">Biblioteca Otimizada para Microcontroladores AVR</div>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('twi__internal_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência do Arquivo twi_internal.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definições internas e Máquina de Estados (FSM) do driver TWI.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="twi__types_8h_source.html">twi_types.h</a>&quot;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;avr/io.h&gt;</code><br />
+<code>#include &lt;avr/interrupt.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para twi_internal.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="twi__internal_8h__incl.svg" width="382" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Este grafo mostra quais arquivos estão direta ou indiretamente relacionados com esse arquivo:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="twi__internal_8h__dep__incl.svg" width="131" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="twi__internal_8h_source.html">Ir para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Estruturas de Dados</h2></td></tr>
+<tr class="memitem:TWI_5FTransaction_5Ft" id="r_TWI_5FTransaction_5Ft"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_t_w_i___transaction__t.html">TWI_Transaction_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estrutura de controle para a transação TWI ativa.  <a href="struct_t_w_i___transaction__t.html#details">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:a7bd5c71663d965779b11f566fc9beec4" id="r_a7bd5c71663d965779b11f566fc9beec4"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a7bd5c71663d965779b11f566fc9beec4">TWI_State_t</a> { <br />
+&#160;&#160;<a class="el" href="#a7bd5c71663d965779b11f566fc9beec4a97c19fb2db865c172555d094b3f2e1b5">TWI_STATE_IDLE</a>
+, <a class="el" href="#a7bd5c71663d965779b11f566fc9beec4a2d1c96535fa6d875676a3d5c9dd64194">TWI_STATE_START</a>
+, <a class="el" href="#a7bd5c71663d965779b11f566fc9beec4a7580715deb0fc222ad915bf9a98d2ddc">TWI_STATE_SLA_W</a>
+, <a class="el" href="#a7bd5c71663d965779b11f566fc9beec4a00888708d15fe69b7a17cfab17f36fee">TWI_STATE_SLA_R</a>
+, <br />
+&#160;&#160;<a class="el" href="#a7bd5c71663d965779b11f566fc9beec4af6c1ed193c5605cf9aaf580b1c10e469">TWI_STATE_DATA_TX</a>
+, <a class="el" href="#a7bd5c71663d965779b11f566fc9beec4adfa53b6fa1bd74d82f4f27d3b592b066">TWI_STATE_DATA_RX</a>
+, <a class="el" href="#a7bd5c71663d965779b11f566fc9beec4a97132642f6d3fabff4c7b0eecc368f27">TWI_STATE_SLAVE_TX</a>
+, <a class="el" href="#a7bd5c71663d965779b11f566fc9beec4a075b9b440111e0097452d49970bc9a59">TWI_STATE_STOP</a>
+, <br />
+&#160;&#160;<a class="el" href="#a7bd5c71663d965779b11f566fc9beec4ab67b55937c17385aa5ab4efce5818632">TWI_STATE_ERROR</a>
+, <a class="el" href="#a7bd5c71663d965779b11f566fc9beec4a3a8ae016743b8416dad228d7ba66de77">TWI_STATE_PROBE</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a7bd5c71663d965779b11f566fc9beec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estados da Máquina de Estados Finita (FSM) do TWI.  <a href="#a7bd5c71663d965779b11f566fc9beec4">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a1b41418a568025dc4d5fe7e68769f548" id="r_a1b41418a568025dc4d5fe7e68769f548"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1b41418a568025dc4d5fe7e68769f548">twi_handle_state</a> (void)</td></tr>
+<tr class="memdesc:a1b41418a568025dc4d5fe7e68769f548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gerenciador principal da Máquina de Estados.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a8acb36898b6342f0037812b7793638ca" id="r_a8acb36898b6342f0037812b7793638ca"><td class="memItemLeft">volatile <a class="el" href="struct_t_w_i___transaction__t.html">TWI_Transaction_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8acb36898b6342f0037812b7793638ca">g_twi_txn</a></td></tr>
+<tr class="memdesc:a8acb36898b6342f0037812b7793638ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instância global da transação ativa.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Definições internas e Máquina de Estados (FSM) do driver TWI. </p>
+<p>Este cabeçalho contém as estruturas e estados que não devem ser acessados diretamente pelo usuário, mas que são fundamentais para o funcionamento da ISR (Interrupt Service Routine). </p>
+
+<p class="definition">Definição no arquivo <a class="el" href="twi__internal_8h_source.html">twi_internal.h</a>.</p>
+</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumerações</h2>
+<a id="a7bd5c71663d965779b11f566fc9beec4" name="a7bd5c71663d965779b11f566fc9beec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bd5c71663d965779b11f566fc9beec4">&#9670;&#160;</a></span>TWI_State_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a7bd5c71663d965779b11f566fc9beec4">TWI_State_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estados da Máquina de Estados Finita (FSM) do TWI. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="a7bd5c71663d965779b11f566fc9beec4a97c19fb2db865c172555d094b3f2e1b5" name="a7bd5c71663d965779b11f566fc9beec4a97c19fb2db865c172555d094b3f2e1b5"></a>TWI_STATE_IDLE&#160;</td><td class="fielddoc"><p>Barramento ocioso, nenhuma transação ativa. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7bd5c71663d965779b11f566fc9beec4a2d1c96535fa6d875676a3d5c9dd64194" name="a7bd5c71663d965779b11f566fc9beec4a2d1c96535fa6d875676a3d5c9dd64194"></a>TWI_STATE_START&#160;</td><td class="fielddoc"><p>Condição de START enviada. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7bd5c71663d965779b11f566fc9beec4a7580715deb0fc222ad915bf9a98d2ddc" name="a7bd5c71663d965779b11f566fc9beec4a7580715deb0fc222ad915bf9a98d2ddc"></a>TWI_STATE_SLA_W&#160;</td><td class="fielddoc"><p>Endereço do Slave + bit de Escrita (W) enviado. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7bd5c71663d965779b11f566fc9beec4a00888708d15fe69b7a17cfab17f36fee" name="a7bd5c71663d965779b11f566fc9beec4a00888708d15fe69b7a17cfab17f36fee"></a>TWI_STATE_SLA_R&#160;</td><td class="fielddoc"><p>Endereço do Slave + bit de Leitura (R) enviado. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7bd5c71663d965779b11f566fc9beec4af6c1ed193c5605cf9aaf580b1c10e469" name="a7bd5c71663d965779b11f566fc9beec4af6c1ed193c5605cf9aaf580b1c10e469"></a>TWI_STATE_DATA_TX&#160;</td><td class="fielddoc"><p>Transmitindo dados (Master ou Slave). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7bd5c71663d965779b11f566fc9beec4adfa53b6fa1bd74d82f4f27d3b592b066" name="a7bd5c71663d965779b11f566fc9beec4adfa53b6fa1bd74d82f4f27d3b592b066"></a>TWI_STATE_DATA_RX&#160;</td><td class="fielddoc"><p>Recebendo dados (Master ou Slave). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7bd5c71663d965779b11f566fc9beec4a97132642f6d3fabff4c7b0eecc368f27" name="a7bd5c71663d965779b11f566fc9beec4a97132642f6d3fabff4c7b0eecc368f27"></a>TWI_STATE_SLAVE_TX&#160;</td><td class="fielddoc"><p>Slave em modo de transmissão ativa. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7bd5c71663d965779b11f566fc9beec4a075b9b440111e0097452d49970bc9a59" name="a7bd5c71663d965779b11f566fc9beec4a075b9b440111e0097452d49970bc9a59"></a>TWI_STATE_STOP&#160;</td><td class="fielddoc"><p>Condição de STOP sendo gerada. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7bd5c71663d965779b11f566fc9beec4ab67b55937c17385aa5ab4efce5818632" name="a7bd5c71663d965779b11f566fc9beec4ab67b55937c17385aa5ab4efce5818632"></a>TWI_STATE_ERROR&#160;</td><td class="fielddoc"><p>Estado de erro detectado. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7bd5c71663d965779b11f566fc9beec4a3a8ae016743b8416dad228d7ba66de77" name="a7bd5c71663d965779b11f566fc9beec4a3a8ae016743b8416dad228d7ba66de77"></a>TWI_STATE_PROBE&#160;</td><td class="fielddoc"><p>Verificando presença de dispositivo no barramento. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definição na linha <a class="el" href="twi__internal_8h_source.html#l00019">19</a> do arquivo <a class="el" href="twi__internal_8h_source.html">twi_internal.h</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Funções</h2>
+<a id="a1b41418a568025dc4d5fe7e68769f548" name="a1b41418a568025dc4d5fe7e68769f548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b41418a568025dc4d5fe7e68769f548">&#9670;&#160;</a></span>twi_handle_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void twi_handle_state </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gerenciador principal da Máquina de Estados. </p>
+<p>Chamado dentro da interrupção para decidir o próximo passo com base no status do hardware. </p>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8c_source.html#l00381">381</a> do arquivo <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variáveis</h2>
+<a id="a8acb36898b6342f0037812b7793638ca" name="a8acb36898b6342f0037812b7793638ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8acb36898b6342f0037812b7793638ca">&#9670;&#160;</a></span>g_twi_txn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="struct_t_w_i___transaction__t.html">TWI_Transaction_t</a> g_twi_txn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Instância global da transação ativa. </p>
+<dl class="section note"><dt>Observação</dt><dd>Declarada como externa para que a ISR em <a class="el" href="twi_8c.html" title="Implementação do Driver TWI/I2C para microcontroladores AVR.">twi.c</a> possa manipulá-la.</dd></dl>
+<p>Instância global da transação ativa. </p>
+
+<p class="definition">Definição na linha <a class="el" href="twi_8c_source.html#l00034">34</a> do arquivo <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.16.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a href="twi__internal_8h.html">twi_internal.h</a></li>
+    <li class="footer">
+      Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 | 
+      Desenvolvido por <b>Tiago Henrique dos Santos - Ci&ecirc;ncia El&eacute;trica</b>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

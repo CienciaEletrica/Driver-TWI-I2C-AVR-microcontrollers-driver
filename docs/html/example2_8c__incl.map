@@ -1,0 +1,20 @@
+<map id="examples/example2.c" name="examples/example2.c">
+<area shape="rect" id="Node000001" title="Exemplo 2: Operação Slave completa (Responde ao Master do Exemplo 1)." alt="" coords="102,5,250,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,70,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,35,77,74,74,70,153,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,80,154,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,30,144,69,140,66,166,35"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="179,80,280,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,30,214,67,209,68,185,35"/>
+<area shape="rect" id="Node000005" href="$twi_8h.html" title="Interface pública do driver TWI/I2C para AVR." alt="" coords="305,80,354,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="203,30,293,73,288,75,203,35"/>
+<area shape="rect" id="Node000006" href="$twi__types_8h.html" title="Definições de tipos, enumerações e assinaturas de callback do driver TWI." alt="" coords="204,155,292,181"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="318,106,275,147,272,142,313,109"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="295,229,364,256"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="332,105,332,215,327,213,327,109"/>
+<area shape="rect" id="Node000009" href="$twi__config_8h.html" title="Configurações estáticas do driver TWI." alt="" coords="366,155,458,181"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="345,105,389,145,384,144,343,110"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="207,229,271,256"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="249,180,244,216,240,212,245,184"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="263,179,307,219,302,219,261,184"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="inc/twi.h" name="inc/twi.h">
+<area shape="rect" id="Node000001" title="Interface pública do driver TWI/I2C para AVR." alt="" coords="96,5,166,32"/>
+<area shape="rect" id="Node000002" href="$twi__types_8h.html" title="Definições de tipos, enumerações e assinaturas de callback do driver TWI." alt="" coords="5,80,94,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,35,77,72,73,68,118,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="97,155,165,181"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="133,31,133,140,128,139,129,34"/>
+<area shape="rect" id="Node000005" href="$twi__config_8h.html" title="Configurações estáticas do driver TWI." alt="" coords="168,80,259,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="146,30,190,69,185,70,145,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="8,155,72,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="50,105,46,140,41,139,46,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="65,105,108,143,103,145,63,110"/>
+</map>

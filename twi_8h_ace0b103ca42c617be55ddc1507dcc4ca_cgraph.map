@@ -1,0 +1,14 @@
+<map id="twi_bus_is_free" name="twi_bus_is_free">
+<area shape="rect" id="Node000001" title="Verifica se o barramento TWI está disponível para uma nova transação." alt="" coords="5,56,118,83"/>
+<area shape="rect" id="Node000002" href="$example1_8c.html#ad9b05939593a1d19d76cdd8ea94edb17" title="Callback de conclusão para transações Master." alt="" coords="166,5,261,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,53,159,36,155,39,105,58"/>
+<area shape="rect" id="Node000004" href="$example2_8c.html#a8c90411c4eede2e0397727033c45176f" title="Callback de recebimento (Master &#45;&gt; Slave)." alt="" coords="171,56,256,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,67,158,68,153,70,118,72"/>
+<area shape="rect" id="Node000006" href="$example2_8c.html#a17a0a7ba53e28f208477b94daf43a35e" title="Callback de transmissão (Slave &#45;&gt; Master)." alt="" coords="169,107,258,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="104,81,159,100,154,102,104,86"/>
+<area shape="rect" id="Node000003" href="$example1_8c.html#a30c5ce81613c9030d0f20e4c556f384e" title="Envia uma string via UART0." alt="" coords="309,5,481,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="261,16,296,18,291,19,262,21"/>
+<area shape="rect" id="Node000005" href="$example2_8c.html#a30c5ce81613c9030d0f20e4c556f384e" title=" " alt="" coords="309,81,481,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="256,72,296,80,291,81,256,78"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="258,111,291,109,296,109,259,116"/>
+</map>

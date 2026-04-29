@@ -1,0 +1,5 @@
+<map id="twi_master_start_write_read" name="twi_master_start_write_read">
+<area shape="rect" id="Node000001" title="Inicia uma transação combinada (Escrita seguida de Leitura) com Repeated Start." alt="" coords="103,5,288,32"/>
+<area shape="rect" id="Node000002" href="$example3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Função principal para o teste do MPU6050." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
+</map>

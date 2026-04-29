@@ -1,0 +1,21 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Ponto de entrada principal da aplicação." alt="" coords="5,155,55,181"/>
+<area shape="rect" id="Node000002" href="$example1_8c.html#ad9b05939593a1d19d76cdd8ea94edb17" title="Callback de conclusão para transações Master." alt="" coords="307,45,402,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="31,154,37,125,50,88,71,52,85,36,101,23,127,11,155,4,184,3,213,5,268,18,316,38,311,39,267,23,212,11,184,8,156,10,129,16,104,28,88,40,75,55,55,90,42,126,36,155"/>
+<area shape="rect" id="Node000003" href="$example1_8c.html#a30c5ce81613c9030d0f20e4c556f384e" title="Envia uma string via UART0." alt="" coords="453,75,626,101"/>
+<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="53,156,102,140,190,122,279,108,440,93,436,96,280,114,191,127,103,145,56,160"/>
+<area shape="rect" id="Node000004" href="$twi_8c.html#a839dfadc1a40b5a4016c5794bba521e3" title="Inicializa o módulo TWI." alt="" coords="148,155,210,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="54,165,134,166,131,170,56,170"/>
+<area shape="rect" id="Node000006" href="$twi_8c.html#a21f0cd2bbdf528b20ad08d8e1284693e" title="Registra os callbacks de eventos para o modo Master." alt="" coords="112,37,247,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="41,152,68,125,101,96,120,86,117,90,104,101,71,129,46,155"/>
+<area shape="rect" id="Node000007" href="$twi_8c.html#a38c82f66267f7ed48a1342358563429d" title="Inicia leitura assíncrona de dados como Master." alt="" coords="104,205,254,232"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="55,174,104,191,124,199,120,201,102,196,56,179"/>
+<area shape="rect" id="Node000008" href="$twi_8c.html#ac30e0e60dc0456b3995368912e96e8f2" title="Inicia envio assíncrono de dados como Master." alt="" coords="103,256,256,283"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="41,179,69,211,104,242,114,249,109,249,101,246,65,215,41,184"/>
+<area shape="rect" id="Node000009" href="$example1_8c.html#aba398ef6d2b9f80899b2d65ca9a0fe7d" title="Inicializa a UART0 para 9600 bps (8N1)." alt="" coords="134,307,225,333"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="36,179,60,235,80,266,104,293,122,305,117,305,101,297,75,269,56,237,34,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,63,441,71,435,72,403,69"/>
+<area shape="rect" id="Node000005" href="$twi_8c.html#a43dcf18cf7b6f9c5ee25a4a88e2d7efd" title="Calcula o valor do registrador TWBR baseado na frequência de CPU e SCL desejada." alt="" coords="304,155,405,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="211,165,291,167,286,169,212,170"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="247,56,294,57,289,60,248,61"/>
+</map>

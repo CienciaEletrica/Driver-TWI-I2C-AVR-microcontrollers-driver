@@ -1,0 +1,55 @@
+# Configurações Básicas do Projeto
+PROJECT_NAME           = "TWI(I2C) AVR Driver"
+PROJECT_NUMBER         = "V1.0"
+OUTPUT_DIRECTORY       = "G:/Bibliotecas AVR/twi_i2c/docs"
+OUTPUT_LANGUAGE        = Brazilian
+PROJECT_LOGO           = "G:/Bibliotecas AVR/twi_i2c/img/FIGURA2.png"
+
+# Entrada de Arquivos (Consolidado)
+# Incluímos as pastas de header, source, exemplos e o próprio README na raiz
+INPUT                  = "G:/Bibliotecas AVR/twi_i2c/inc" \
+                         "G:/Bibliotecas AVR/twi_i2c/src" \
+                         "G:/Bibliotecas AVR/twi_i2c/examples" \
+                         "G:/Bibliotecas AVR/twi_i2c/README.md"
+
+FILE_PATTERNS          = *.c *.h *.md
+RECURSIVE              = YES
+OPTIMIZE_OUTPUT_FOR_C  = YES
+STRIP_FROM_PATH        = "G:/Bibliotecas AVR/twi_i2c"
+IMAGE_PATH             = "G:/Bibliotecas AVR/twi_i2c/img"
+
+# Configurações de Extração
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+
+# Exemplos
+EXAMPLE_PATH           = "G:/Bibliotecas AVR/twi_i2c/examples"
+EXAMPLE_RECURSIVE      = YES
+
+# Saída
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO # Mude para YES se realmente precisar de PDF via LaTeX
+USE_MATHJAX            = YES
+
+# Integração com Graphviz (Diagramas de Chamada)
+HAVE_DOT               = YES
+DOT_PATH               = "C:/Program Files/Graphviz/bin" 
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_TRANSPARENT        = YES
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
+DOT_GRAPH_MAX_NODES    = 50
+MAX_DOT_GRAPH_DEPTH    = 0
+
+# Interface (Comente se não possuir os arquivos .html/.css customizados)
+# HTML_HEADER            = header.html
+# HTML_FOOTER            = footer.html
+# HTML_STYLESHEET        = stylesheet.css
+# LAYOUT_FILE            = DoxygenLayout.xml
+
+# Markdown
+USE_MDRENDERER         = YES

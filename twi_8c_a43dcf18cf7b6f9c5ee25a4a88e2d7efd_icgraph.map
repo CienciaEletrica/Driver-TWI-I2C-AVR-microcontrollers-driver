@@ -1,0 +1,7 @@
+<map id="twi_calc_twbr" name="twi_calc_twbr">
+<area shape="rect" id="Node000001" title="Calcula o valor do registrador TWBR baseado na frequência de CPU e SCL desejada." alt="" coords="213,5,314,32"/>
+<area shape="rect" id="Node000002" href="$twi_8c.html#a839dfadc1a40b5a4016c5794bba521e3" title="Inicializa o módulo TWI." alt="" coords="103,5,165,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,19,166,21,165,16,200,19"/>
+<area shape="rect" id="Node000003" href="$example1_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada principal da aplicação." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="84,20,55,21,55,16,89,18"/>
+</map>

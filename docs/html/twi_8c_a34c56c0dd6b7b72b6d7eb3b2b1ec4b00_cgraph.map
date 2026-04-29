@@ -1,0 +1,10 @@
+<map id="twi_slave_register_callbacks" name="twi_slave_register_callbacks">
+<area shape="rect" id="Node000001" title="Registra os callbacks de eventos para o modo Slave." alt="" coords="5,23,132,65"/>
+<area shape="rect" id="Node000002" href="$example2_8c.html#a8c90411c4eede2e0397727033c45176f" title="Callback de recebimento (Master &#45;&gt; Slave)." alt="" coords="182,5,266,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,31,169,27,164,29,133,36"/>
+<area shape="rect" id="Node000004" href="$example2_8c.html#a17a0a7ba53e28f208477b94daf43a35e" title="Callback de transmissão (Slave &#45;&gt; Master)." alt="" coords="180,56,269,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="132,52,167,59,161,60,132,57"/>
+<area shape="rect" id="Node000003" href="$example2_8c.html#a30c5ce81613c9030d0f20e4c556f384e" title=" " alt="" coords="317,31,489,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="267,22,304,29,299,30,267,27"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="269,60,299,59,304,58,270,66"/>
+</map>

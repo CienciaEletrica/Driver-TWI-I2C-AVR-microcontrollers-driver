@@ -1,0 +1,196 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<title>TWI(I2C) AVR Driver: Código-Fonte de inc/twi.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
+   <tbody>
+   <tr style="height: 80px;"> <!-- Define a altura da linha do cabeçalho -->
+    <!-- Lógica do Logo com tamanho forçado -->
+    <td id="projectlogo" style="width: 80px; padding: 10px;">
+      <img alt="Logo" src="FIGURA2.png" style="height: 60px !important; width: auto !important;"/>
+    </td>
+    <td id="projectalign" style="padding-left: 0.5em; vertical-align: middle;">
+     <div id="projectname" style="font-size: 1.6em; font-weight: bold;">Driver TWI/I2C - YouTube: Ci&ecirc;ncia El&eacute;trica</div>
+     <div id="projectbrief" style="font-size: 1em; opacity: 0.8;">Biblioteca Otimizada para Microcontroladores AVR</div>
+    </td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('twi_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">twi.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="twi_8h.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef TWI_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define TWI_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef F_CPU</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="twi_8h.html#a43bafb28b29491ec7f871319b5a3b2f8">   13</a></span><span class="preprocessor">#define F_CPU 16000000UL</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="twi__types_8h.html">twi_types.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="twi__config_8h.html">twi_config.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><a class="code hl_enumeration" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a> <a class="code hl_function" href="twi_8h.html#a839dfadc1a40b5a4016c5794bba521e3">twi_init</a>(<a class="code hl_enumeration" href="twi__types_8h.html#a3731c618227b2d4a657e582d2a743933">TWI_Mode_t</a> mode, uint8_t address, <a class="code hl_enumeration" href="twi__types_8h.html#adab52de4b26c56f1d884f0a78491beed">TWI_Clock_t</a> clock);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">void</span> <a class="code hl_function" href="twi_8h.html#aacbe2f164050a536376fad9f081021e4">twi_deinit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="twi_8h.html#ace0b103ca42c617be55ddc1507dcc4ca">   37</a></span>uint8_t <a class="code hl_function" href="twi_8h.html#ace0b103ca42c617be55ddc1507dcc4ca">twi_bus_is_free</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">/* --- Funções para Modo Master --- */</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><a class="code hl_enumeration" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a> <a class="code hl_function" href="twi_8h.html#ac30e0e60dc0456b3995368912e96e8f2">twi_master_start_write</a>(uint8_t slave_address, <span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> length);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><a class="code hl_enumeration" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a> <a class="code hl_function" href="twi_8h.html#a38c82f66267f7ed48a1342358563429d">twi_master_start_read</a>(uint8_t slave_address, uint8_t* data, <span class="keywordtype">size_t</span> length);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><a class="code hl_enumeration" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a> <a class="code hl_function" href="twi_8h.html#a8a73bbaf7928c2df253a0c490c80333e">twi_master_start_write_read</a>(uint8_t slave_address, <span class="keyword">const</span> uint8_t* write_data, <span class="keywordtype">size_t</span> write_length,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                                         uint8_t* read_data, <span class="keywordtype">size_t</span> read_length);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keywordtype">void</span> <a class="code hl_function" href="twi_8h.html#a21f0cd2bbdf528b20ad08d8e1284693e">twi_master_register_callbacks</a>(<a class="code hl_typedef" href="twi__types_8h.html#a58a34777f75c8f6afb877011c34499bd">TWI_Master_Complete_Callback_t</a> <a class="code hl_function" href="example1_8c.html#ad9b05939593a1d19d76cdd8ea94edb17">on_complete</a>, <a class="code hl_typedef" href="twi__types_8h.html#ad914547b4e138d105a95689579306839">TWI_Error_Callback_t</a> on_error);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">/* --- Funções para Modo Slave --- */</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keywordtype">void</span> <a class="code hl_function" href="twi_8h.html#a34c56c0dd6b7b72b6d7eb3b2b1ec4b00">twi_slave_register_callbacks</a>(<a class="code hl_typedef" href="twi__types_8h.html#a5e73b0d863a46d89bc055fa23f0e2597">TWI_Slave_Receive_Callback_t</a> <a class="code hl_function" href="example2_8c.html#a8c90411c4eede2e0397727033c45176f">on_receive</a>, <a class="code hl_typedef" href="twi__types_8h.html#a0235904eb077a98377e0bcfe737dc378">TWI_Slave_Transmit_Callback_t</a> <a class="code hl_function" href="example2_8c.html#a17a0a7ba53e28f208477b94daf43a35e">on_transmit</a>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><a class="code hl_enumeration" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a> <a class="code hl_function" href="twi_8h.html#a5577c9fee94b16aa1c3321cc80f8f7b7">twi_slave_process</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><a class="code hl_enumeration" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a> <a class="code hl_function" href="twi_8h.html#a518f081c2f69a656e38fe00c3dc42737">twi_master_start_probe</a>(uint8_t slave_address);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="twi_8h.html#a8d1a6cf90ae95ca10032449a473791ae">  106</a></span>uint8_t <a class="code hl_function" href="twi_8h.html#a8d1a6cf90ae95ca10032449a473791ae">twi_had_timeout</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span></div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="};">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="twi_8h.html#af4ccfdbb8307f777e7624599b63a57a3">  111</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="twi_8h.html#af4ccfdbb8307f777e7624599b63a57a3a9db0f4a6c1d01ffe86a24f60db11d563">  112</a></span>    <a class="code hl_enumvalue" href="twi_8h.html#af4ccfdbb8307f777e7624599b63a57a3a9db0f4a6c1d01ffe86a24f60db11d563">TWI_BUS_IDLE</a>,      </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="twi_8h.html#af4ccfdbb8307f777e7624599b63a57a3a4f8d80626f16561e2f40175c775cdfca">  113</a></span>    <a class="code hl_enumvalue" href="twi_8h.html#af4ccfdbb8307f777e7624599b63a57a3a4f8d80626f16561e2f40175c775cdfca">TWI_BUS_BUSY</a>,      </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="twi_8h.html#af4ccfdbb8307f777e7624599b63a57a3a30266b1d9bca939bfddc92ec2047e568">  114</a></span>    <a class="code hl_enumvalue" href="twi_8h.html#af4ccfdbb8307f777e7624599b63a57a3a30266b1d9bca939bfddc92ec2047e568">TWI_BUS_ERROR</a>      </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>} <a class="code hl_enumeration" href="twi_8h.html#af4ccfdbb8307f777e7624599b63a57a3">TWI_BusState_t</a>;</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><a class="code hl_enumeration" href="twi_8h.html#af4ccfdbb8307f777e7624599b63a57a3">TWI_BusState_t</a> <a class="code hl_function" href="twi_8h.html#ad57dcd39bbd01aeb8446844c3a58c9fa">twi_get_bus_status</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><a class="code hl_enumeration" href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a> <a class="code hl_function" href="twi_8h.html#ad24454487e8f05eee2b6f6765c0f98f7">twi_master_write_read</a>(uint8_t slave_addr, <span class="keyword">const</span> uint8_t* tx_data, <span class="keywordtype">size_t</span> tx_len, uint8_t* rx_data, <span class="keywordtype">size_t</span> rx_len);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">#endif </span><span class="comment">// TWI_H</span></div>
+<div class="ttc" id="aexample1_8c_html_ad9b05939593a1d19d76cdd8ea94edb17"><div class="ttname"><a href="example1_8c.html#ad9b05939593a1d19d76cdd8ea94edb17">on_complete</a></div><div class="ttdeci">void on_complete(TWI_Status_t st, const uint8_t *data, size_t len)</div><div class="ttdoc">Callback de conclusão para transações Master.</div><div class="ttdef"><b>Definição</b> <a href="example1_8c_source.html#l00105">example1.c:105</a></div></div>
+<div class="ttc" id="aexample2_8c_html_a17a0a7ba53e28f208477b94daf43a35e"><div class="ttname"><a href="example2_8c.html#a17a0a7ba53e28f208477b94daf43a35e">on_transmit</a></div><div class="ttdeci">size_t on_transmit(uint8_t *buffer, size_t max_len)</div><div class="ttdoc">Callback de transmissão (Slave -&gt; Master).</div><div class="ttdef"><b>Definição</b> <a href="example2_8c_source.html#l00115">example2.c:115</a></div></div>
+<div class="ttc" id="aexample2_8c_html_a8c90411c4eede2e0397727033c45176f"><div class="ttname"><a href="example2_8c.html#a8c90411c4eede2e0397727033c45176f">on_receive</a></div><div class="ttdeci">void on_receive(const uint8_t *dados, size_t len)</div><div class="ttdoc">Callback de recebimento (Master -&gt; Slave).</div><div class="ttdef"><b>Definição</b> <a href="example2_8c_source.html#l00097">example2.c:97</a></div></div>
+<div class="ttc" id="atwi_8h_html_a21f0cd2bbdf528b20ad08d8e1284693e"><div class="ttname"><a href="twi_8h.html#a21f0cd2bbdf528b20ad08d8e1284693e">twi_master_register_callbacks</a></div><div class="ttdeci">void twi_master_register_callbacks(TWI_Master_Complete_Callback_t on_complete, TWI_Error_Callback_t on_error)</div><div class="ttdoc">Registra os callbacks de eventos para o modo Master.</div><div class="ttdef"><b>Definição</b> <a href="twi_8c_source.html#l00097">twi.c:97</a></div></div>
+<div class="ttc" id="atwi_8h_html_a34c56c0dd6b7b72b6d7eb3b2b1ec4b00"><div class="ttname"><a href="twi_8h.html#a34c56c0dd6b7b72b6d7eb3b2b1ec4b00">twi_slave_register_callbacks</a></div><div class="ttdeci">void twi_slave_register_callbacks(TWI_Slave_Receive_Callback_t on_receive, TWI_Slave_Transmit_Callback_t on_transmit)</div><div class="ttdoc">Registra os callbacks de eventos para o modo Slave.</div><div class="ttdef"><b>Definição</b> <a href="twi_8c_source.html#l00103">twi.c:103</a></div></div>
+<div class="ttc" id="atwi_8h_html_a38c82f66267f7ed48a1342358563429d"><div class="ttname"><a href="twi_8h.html#a38c82f66267f7ed48a1342358563429d">twi_master_start_read</a></div><div class="ttdeci">TWI_Status_t twi_master_start_read(uint8_t slave_address, uint8_t *data, size_t length)</div><div class="ttdoc">Inicia leitura assíncrona de dados como Master.</div><div class="ttdef"><b>Definição</b> <a href="twi_8c_source.html#l00348">twi.c:348</a></div></div>
+<div class="ttc" id="atwi_8h_html_a518f081c2f69a656e38fe00c3dc42737"><div class="ttname"><a href="twi_8h.html#a518f081c2f69a656e38fe00c3dc42737">twi_master_start_probe</a></div><div class="ttdeci">TWI_Status_t twi_master_start_probe(uint8_t slave_address)</div><div class="ttdoc">Realiza um &quot;ping&quot; no endereço para verificar se o Slave está presente.</div><div class="ttdef"><b>Definição</b> <a href="twi_8c_source.html#l00109">twi.c:109</a></div></div>
+<div class="ttc" id="atwi_8h_html_a5577c9fee94b16aa1c3321cc80f8f7b7"><div class="ttname"><a href="twi_8h.html#a5577c9fee94b16aa1c3321cc80f8f7b7">twi_slave_process</a></div><div class="ttdeci">TWI_Status_t twi_slave_process(void)</div><div class="ttdoc">Processa eventos pendentes no Slave.</div><div class="ttdef"><b>Definição</b> <a href="twi_8c_source.html#l00385">twi.c:385</a></div></div>
+<div class="ttc" id="atwi_8h_html_a839dfadc1a40b5a4016c5794bba521e3"><div class="ttname"><a href="twi_8h.html#a839dfadc1a40b5a4016c5794bba521e3">twi_init</a></div><div class="ttdeci">TWI_Status_t twi_init(TWI_Mode_t mode, uint8_t address, TWI_Clock_t clock)</div><div class="ttdoc">Inicializa o módulo TWI.</div><div class="ttdef"><b>Definição</b> <a href="twi_8c_source.html#l00065">twi.c:65</a></div></div>
+<div class="ttc" id="atwi_8h_html_a8a73bbaf7928c2df253a0c490c80333e"><div class="ttname"><a href="twi_8h.html#a8a73bbaf7928c2df253a0c490c80333e">twi_master_start_write_read</a></div><div class="ttdeci">TWI_Status_t twi_master_start_write_read(uint8_t slave_address, const uint8_t *write_data, size_t write_length, uint8_t *read_data, size_t read_length)</div><div class="ttdoc">Inicia uma transação combinada (Escrita seguida de Leitura) com Repeated Start.</div><div class="ttdef"><b>Definição</b> <a href="twi_8c_source.html#l00361">twi.c:361</a></div></div>
+<div class="ttc" id="atwi_8h_html_a8d1a6cf90ae95ca10032449a473791ae"><div class="ttname"><a href="twi_8h.html#a8d1a6cf90ae95ca10032449a473791ae">twi_had_timeout</a></div><div class="ttdeci">uint8_t twi_had_timeout(void)</div><div class="ttdoc">Verifica se a última transação foi abortada por tempo limite excedido.</div></div>
+<div class="ttc" id="atwi_8h_html_aacbe2f164050a536376fad9f081021e4"><div class="ttname"><a href="twi_8h.html#aacbe2f164050a536376fad9f081021e4">twi_deinit</a></div><div class="ttdeci">void twi_deinit(void)</div><div class="ttdoc">Desinicializa o módulo TWI, desligando o hardware e interrupções.</div><div class="ttdef"><b>Definição</b> <a href="twi_8c_source.html#l00090">twi.c:90</a></div></div>
+<div class="ttc" id="atwi_8h_html_ac30e0e60dc0456b3995368912e96e8f2"><div class="ttname"><a href="twi_8h.html#ac30e0e60dc0456b3995368912e96e8f2">twi_master_start_write</a></div><div class="ttdeci">TWI_Status_t twi_master_start_write(uint8_t slave_address, const uint8_t *data, size_t length)</div><div class="ttdoc">Inicia envio assíncrono de dados como Master.</div><div class="ttdef"><b>Definição</b> <a href="twi_8c_source.html#l00332">twi.c:332</a></div></div>
+<div class="ttc" id="atwi_8h_html_ace0b103ca42c617be55ddc1507dcc4ca"><div class="ttname"><a href="twi_8h.html#ace0b103ca42c617be55ddc1507dcc4ca">twi_bus_is_free</a></div><div class="ttdeci">uint8_t twi_bus_is_free(void)</div><div class="ttdoc">Verifica se o barramento TWI está disponível para uma nova transação.</div></div>
+<div class="ttc" id="atwi_8h_html_ad24454487e8f05eee2b6f6765c0f98f7"><div class="ttname"><a href="twi_8h.html#ad24454487e8f05eee2b6f6765c0f98f7">twi_master_write_read</a></div><div class="ttdeci">TWI_Status_t twi_master_write_read(uint8_t slave_addr, const uint8_t *tx_data, size_t tx_len, uint8_t *rx_data, size_t rx_len)</div><div class="ttdoc">Versão síncrona/bloqueante de escrita seguida de leitura.</div><div class="ttdef"><b>Definição</b> <a href="twi_8c_source.html#l00418">twi.c:418</a></div></div>
+<div class="ttc" id="atwi_8h_html_ad57dcd39bbd01aeb8446844c3a58c9fa"><div class="ttname"><a href="twi_8h.html#ad57dcd39bbd01aeb8446844c3a58c9fa">twi_get_bus_status</a></div><div class="ttdeci">TWI_BusState_t twi_get_bus_status(void)</div><div class="ttdoc">Retorna o estado atual do barramento.</div><div class="ttdef"><b>Definição</b> <a href="twi_8c_source.html#l00390">twi.c:390</a></div></div>
+<div class="ttc" id="atwi_8h_html_af4ccfdbb8307f777e7624599b63a57a3"><div class="ttname"><a href="twi_8h.html#af4ccfdbb8307f777e7624599b63a57a3">TWI_BusState_t</a></div><div class="ttdeci">TWI_BusState_t</div><div class="ttdoc">Estados lógicos do barramento TWI.</div><div class="ttdef"><b>Definição</b> <a href="#l00111">twi.h:111</a></div></div>
+<div class="ttc" id="atwi_8h_html_af4ccfdbb8307f777e7624599b63a57a3a30266b1d9bca939bfddc92ec2047e568"><div class="ttname"><a href="twi_8h.html#af4ccfdbb8307f777e7624599b63a57a3a30266b1d9bca939bfddc92ec2047e568">TWI_BUS_ERROR</a></div><div class="ttdeci">@ TWI_BUS_ERROR</div><div class="ttdef"><b>Definição</b> <a href="#l00114">twi.h:114</a></div></div>
+<div class="ttc" id="atwi_8h_html_af4ccfdbb8307f777e7624599b63a57a3a4f8d80626f16561e2f40175c775cdfca"><div class="ttname"><a href="twi_8h.html#af4ccfdbb8307f777e7624599b63a57a3a4f8d80626f16561e2f40175c775cdfca">TWI_BUS_BUSY</a></div><div class="ttdeci">@ TWI_BUS_BUSY</div><div class="ttdef"><b>Definição</b> <a href="#l00113">twi.h:113</a></div></div>
+<div class="ttc" id="atwi_8h_html_af4ccfdbb8307f777e7624599b63a57a3a9db0f4a6c1d01ffe86a24f60db11d563"><div class="ttname"><a href="twi_8h.html#af4ccfdbb8307f777e7624599b63a57a3a9db0f4a6c1d01ffe86a24f60db11d563">TWI_BUS_IDLE</a></div><div class="ttdeci">@ TWI_BUS_IDLE</div><div class="ttdef"><b>Definição</b> <a href="#l00112">twi.h:112</a></div></div>
+<div class="ttc" id="atwi__config_8h_html"><div class="ttname"><a href="twi__config_8h.html">twi_config.h</a></div><div class="ttdoc">Configurações estáticas do driver TWI.</div></div>
+<div class="ttc" id="atwi__types_8h_html"><div class="ttname"><a href="twi__types_8h.html">twi_types.h</a></div><div class="ttdoc">Definições de tipos, enumerações e assinaturas de callback do driver TWI.</div></div>
+<div class="ttc" id="atwi__types_8h_html_a0235904eb077a98377e0bcfe737dc378"><div class="ttname"><a href="twi__types_8h.html#a0235904eb077a98377e0bcfe737dc378">TWI_Slave_Transmit_Callback_t</a></div><div class="ttdeci">size_t(* TWI_Slave_Transmit_Callback_t)(uint8_t *data, size_t max_length)</div><div class="ttdoc">Callback para o modo Slave: acionado quando o Master solicita dados.</div><div class="ttdef"><b>Definição</b> <a href="twi__types_8h_source.html#l00054">twi_types.h:54</a></div></div>
+<div class="ttc" id="atwi__types_8h_html_a3731c618227b2d4a657e582d2a743933"><div class="ttname"><a href="twi__types_8h.html#a3731c618227b2d4a657e582d2a743933">TWI_Mode_t</a></div><div class="ttdeci">TWI_Mode_t</div><div class="ttdoc">Modos de operação do módulo TWI.</div><div class="ttdef"><b>Definição</b> <a href="twi__types_8h_source.html#l00016">twi_types.h:16</a></div></div>
+<div class="ttc" id="atwi__types_8h_html_a553de71e3a551c39f4f97d607b70bde8"><div class="ttname"><a href="twi__types_8h.html#a553de71e3a551c39f4f97d607b70bde8">TWI_Status_t</a></div><div class="ttdeci">TWI_Status_t</div><div class="ttdoc">Códigos de status e erro para operações TWI.</div><div class="ttdef"><b>Definição</b> <a href="twi__types_8h_source.html#l00032">twi_types.h:32</a></div></div>
+<div class="ttc" id="atwi__types_8h_html_a58a34777f75c8f6afb877011c34499bd"><div class="ttname"><a href="twi__types_8h.html#a58a34777f75c8f6afb877011c34499bd">TWI_Master_Complete_Callback_t</a></div><div class="ttdeci">void(* TWI_Master_Complete_Callback_t)(TWI_Status_t status, const uint8_t *data, size_t length)</div><div class="ttdoc">Callback de conclusão para o modo Master.</div><div class="ttdef"><b>Definição</b> <a href="twi__types_8h_source.html#l00062">twi_types.h:62</a></div></div>
+<div class="ttc" id="atwi__types_8h_html_a5e73b0d863a46d89bc055fa23f0e2597"><div class="ttname"><a href="twi__types_8h.html#a5e73b0d863a46d89bc055fa23f0e2597">TWI_Slave_Receive_Callback_t</a></div><div class="ttdeci">void(* TWI_Slave_Receive_Callback_t)(const uint8_t *data, size_t length)</div><div class="ttdoc">Callback para o modo Slave: acionado após o recebimento de dados.</div><div class="ttdef"><b>Definição</b> <a href="twi__types_8h_source.html#l00046">twi_types.h:46</a></div></div>
+<div class="ttc" id="atwi__types_8h_html_ad914547b4e138d105a95689579306839"><div class="ttname"><a href="twi__types_8h.html#ad914547b4e138d105a95689579306839">TWI_Error_Callback_t</a></div><div class="ttdeci">void(* TWI_Error_Callback_t)(TWI_Status_t error)</div><div class="ttdoc">Callback genérico para tratamento de erros no barramento.</div><div class="ttdef"><b>Definição</b> <a href="twi__types_8h_source.html#l00068">twi_types.h:68</a></div></div>
+<div class="ttc" id="atwi__types_8h_html_adab52de4b26c56f1d884f0a78491beed"><div class="ttname"><a href="twi__types_8h.html#adab52de4b26c56f1d884f0a78491beed">TWI_Clock_t</a></div><div class="ttdeci">TWI_Clock_t</div><div class="ttdoc">Frequências de clock (SCL) suportadas para o barramento.</div><div class="ttdef"><b>Definição</b> <a href="twi__types_8h_source.html#l00024">twi_types.h:24</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.16.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a href="twi_8h.html">twi.h</a></li>
+    <li class="footer">
+      Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 | 
+      Desenvolvido por <b>Tiago Henrique dos Santos - Ci&ecirc;ncia El&eacute;trica</b>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

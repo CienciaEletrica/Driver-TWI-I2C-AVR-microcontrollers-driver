@@ -1,0 +1,13 @@
+<map id="USART_Transmite_String" name="USART_Transmite_String">
+<area shape="rect" id="Node000001" title="Envia uma string via UART0." alt="" coords="429,5,602,32"/>
+<area shape="rect" id="Node000002" href="$example1_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Ponto de entrada principal da aplicação." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="411,15,267,12,103,15,56,18,54,13,103,9,267,7,416,12"/>
+<area shape="rect" id="Node000003" href="$example1_8c.html#ad9b05939593a1d19d76cdd8ea94edb17" title="Callback de conclusão para transações Master." alt="" coords="286,31,381,57"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="411,33,382,40,381,35,416,32"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="270,41,55,23,55,18,272,36"/>
+<area shape="rect" id="Node000004" href="$twi_8h.html#ace0b103ca42c617be55ddc1507dcc4ca" title="Verifica se o barramento TWI está disponível para uma nova transação." alt="" coords="114,56,226,83"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="268,55,227,63,226,58,273,53"/>
+<area shape="rect" id="Node000005" href="$twi_8c.html#a21f0cd2bbdf528b20ad08d8e1284693e" title="Registra os callbacks de eventos para o modo Master." alt="" coords="103,107,238,149"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="296,64,239,97,217,109,215,104,237,92,291,66"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="105,98,101,97,66,65,41,35,42,30,70,61,104,93,110,98"/>
+</map>
