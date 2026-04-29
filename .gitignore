@@ -1,0 +1,29 @@
+# Build
+build/
+dist/
+Debug/
+Release/
+
+# AVR outputs
+*.o
+*.obj
+*.elf
+*.hex
+*.eep
+*.map
+*.lst
+*.d
+*.a
+
+# Temp
+*.tmp
+*.bak
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Generated docs
+docs/html/
+docs/latex/
