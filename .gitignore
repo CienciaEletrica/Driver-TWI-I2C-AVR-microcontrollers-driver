@@ -27,3 +27,12 @@ Release/
 # Generated docs
 docs/html/
 docs/latex/
+
+# Pastas de recursos privados
+img/
+
+# Arquivos de configuração e templates do Doxygen
+Doxyfile
+header.html
+footer.html
+custom_styles.css
